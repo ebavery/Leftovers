@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ebavery.leftovers.Settings">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtSettings"
+        android:text="@string/txtSettings"
+        android:textSize="24sp" android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="viewStart" android:textStyle="bold"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/updateTable" android:layout_below="@+id/txtSettings" android:padding="5dp">
+    <TableRow>
+        <TextView
+            android:text="@string/txtNameReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNameReview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal|bold" android:layout_gravity="bottom|left"
+            android:textAlignment="viewStart"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/eTnameReview"
+            android:textColor="@color/colorPrimary"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="@string/txtDietReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDietReview"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal|bold" android:layout_gravity="bottom|left"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinDietReview"/>
+    </TableRow>
+</TableLayout>
+
+        <Button
+            android:text="@string/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/updateTable"
+            style="@style/ButtonStyle" android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSince"
+            android:layout_below="@id/btnUpdate" android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimary" android:textStyle="bold" android:text="Since"/>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/resetTable"
+    android:layout_below="@id/txtSince">
+
+    <TableRow android:padding="5dp">
+        <TextView
+            android:text="@string/txtLeftoversEaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLeftoversEaten"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal|bold"
+            android:layout_gravity="bottom|left"/>
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNumberLeftoversEaten"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom" android:layout_marginLeft="5dp"/>
+    </TableRow>
+
+    <TableRow android:padding="5dp">
+        <TextView
+            android:text="@string/txtLeftoversWasted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLeftoversWasted"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="normal|bold"/>
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNumberLeftoversWasted"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom" android:layout_marginLeft="5dp"/>
+    </TableRow>
+</TableLayout>
+        <Button
+            android:text="@string/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resetTable"
+            android:id="@+id/btnResetCount"
+            style="@style/ButtonStyle" android:layout_marginTop="10dp"/>
+    <Button
+        android:text="@string/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReturn"
+        style="@style/ButtonStyle" android:layout_marginTop="48dp"
+        android:layout_below="@+id/btnResetCount" android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
+</ScrollView>

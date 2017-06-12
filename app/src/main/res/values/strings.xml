@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Save it For Later</string>
+    <string name="action_settings">Settings</string>
+    <string name="imgSplash">Refrigerator image</string>
+    <string name="txtDateMade">Date made:</string>
+    <string name="txtAddLeftover">Add a New Leftover</string>
+    <string name="txtDesc">Description: *</string>
+    <string name="txtDescHint">What should we call it?</string>
+    <string name="txtIngredients">What\'s in it? *</string>
+    <string-array name="Omnivore">
+        <item>Ingredients:</item>
+        <item>rice</item>
+        <item>pasta</item>
+        <item>cooked meat</item>
+        <item>lunch meat</item>
+        <item>dairy</item>
+        <item>soft fresh vegetables (cucumber, tomato, pepper, greens)</item>
+        <item>hard fresh vegetables (carrot, cabbage, beets)</item>
+        <item>cooked vegetables</item>
+        <item>fresh fruit</item>
+        <item>cooked fish</item>
+        <item>cooked seafood</item>
+        <item>beans</item>
+    </string-array>
+    <string-array name="Vegan">
+        <item>Ingredients:</item>
+        <item>rice</item>
+        <item>pasta</item>
+        <item>tofu</item>
+        <item>beans</item>
+        <item>soft fresh vegetables (cucumber, tomato, pepper, greens)</item>
+        <item>hard fresh vegetables (carrot, cabbage, beets)</item>
+        <item>cooked vegetables</item>
+        <item>fresh fruit</item>
+        <item>milk alternative</item>
+    </string-array>
+    <string-array name="Vegetarian">
+        <item>Ingredients:</item>
+        <item>rice</item>
+        <item>pasta</item>
+        <item>tofu</item>
+        <item>beans</item>
+        <item>soft fresh vegetables (cucumber, tomato, pepper, greens)</item>
+        <item>hard fresh vegetables (carrot, cabbage, beets)</item>
+        <item>cooked vegetables</item>
+        <item>fresh fruit</item>
+        <item>dairy</item>
+    </string-array>
+    <string-array name="alertOptions">
+        <item>None</item>
+        <item>1 day before expiration</item>
+        <item>2 days before expiration</item>
+    </string-array>
+    <string name="txtAlert">Alert:</string>
+    <string name="txtDatePick">Pick a Date</string>
+    <string name="btnAdd">Place in Fridge</string>
+    <string name="txtIng2">What else is in it?</string>
+    <string name="txtIng3">Anything else?</string>
+    <string name="txtName">What\'s your name?</string>
+    <string name="txtDiet">What\'s your diet?</string>
+    <string-array name="diets">
+        <item>I eat everything</item>
+        <item>Vegetarian</item>
+        <item>Vegan</item>
+    </string-array>
+    <string name="btnThrewAway">Throw Away</string>
+    <string name="btnAte">Eat</string>
+    <string name="btnKeep">Keep in Fridge</string>
+    <string name="btnReset">Reset to Zero</string>
+    <string name="btnUpdate">update</string>
+    <string name="txtNameReview">Change name:</string>
+    <string name="txtDietReview">Change diet:</string>
+    <string name="txtLeftoversEaten">Leftovers Eaten:</string>
+    <string name="txtLeftoversWasted">Leftovers Thrown Away:</string>
+    <string name="btnReturn">Return to Fridge</string>
+    <string name="txtInstructions">Touch the + to add a leftover</string>
+    <string name="txtDate">Today\'s date:</string>
+    <string name="btnCancel">cancel</string>
+    <string name="txt2HourWarning">Leftovers should be refrigerated within two hours!</string>
+    <string name="txtInitialize">Let\'s Get Started</string>
+    <string name="btnStart">Open My Fridge</string>
+    <string name="txtSettings">Settings</string>
+    <string name="txtEye">Examine leftovers with eyes and nose before consuming!</string>
+
+</resources>

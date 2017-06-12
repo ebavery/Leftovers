@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_leftover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ebavery.leftovers.AddLeftover">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/txtAddLeftover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txtAddLeftover"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@id/txtAddLeftover"
+            android:id="@+id/txt2HourWarning"
+            android:text="@string/txt2HourWarning"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorTertiary" android:layout_marginBottom="10dp"
+            android:textAllCaps="true" android:textSize="12sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtDesc"
+                    android:textColor="@color/colorPrimaryDark" android:textStyle="normal|bold"
+                />
+
+                <EditText
+                    android:id="@+id/etDesc"
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:maxLength="12"
+                    android:hint="@string/txtDescHint" android:textColor="@color/colorPrimary"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtDateMade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtDateMade"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal|bold"/>
+
+                <Button
+                    android:id="@+id/btnPickDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="@string/txtDatePick"
+                    style="@style/ButtonStyle"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtIng1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtIngredients"
+                    android:textColor="@color/colorPrimaryDark" android:textStyle="bold"
+                />
+
+                <Spinner
+                    android:id="@+id/spinIng1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:contextClickable="true"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtIng2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtIng2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinIng2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:contextClickable="true"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtIng3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtIng3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinIng3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:contextClickable="true"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/txtAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/txtAlert"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:text="@string/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCancel"
+                    style="@style/ButtonStyle"/>
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="@string/btnAdd"
+                    style="@style/ButtonStyle" android:layout_marginLeft="25dp"/>
+            </TableRow>
+        </TableLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* REQUIRED"
+            android:textColor="@color/colorTertiary"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
